@@ -6,3 +6,14 @@
 # 8 - конец
 # Output:
 # 2(7), 4(5), 5(8)
+import random
+size = int(input('Введите размер массива чисел: '))
+# рандом такого плана,чтобы избежать повторений чисел в массиве для корректного вывода
+array = list(random.sample(range(1, 10), size))
+print(array)
+min_value = int(input('Введите начало диапазона: '))
+max_value = int(input('Введите конец диапазона: '))
+for i in array:
+    if i >= min_value and i <= max_value:
+        print(f"{array.index(i)}({i})")
+
