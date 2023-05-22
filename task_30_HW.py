@@ -8,12 +8,17 @@
 # 5 - n
 # Output:
 # 1, 3, 5, 7, 9
-a1 = int(input('Введите первый элемент арифметической прогрессии: '))
-d = int(input('Введите разность элементов арифметической прогрессии: '))
-n = int(input('Введите количество элементов арифметической прогрессии: '))
-an = a1 + (n-1) * d
-array = []
-len(array) == n
-for i in range(a1, an + 1, d):
-    array.append(i)
-print(array)
+# a1 = int(input('Введите первый элемент арифметической прогрессии: '))
+# d = int(input('Введите разность элементов арифметической прогрессии: '))
+# n = int(input('Введите количество элементов арифметической прогрессии: '))
+# an = a1 + (n-1) * d
+# array = []
+# len(array) == n
+# for i in range(a1, an + 1, d):
+#     array.append(i)
+# print(array)
+a1 = int(input())
+d = int(input())
+n = int(input())
+for i in range(n):
+    print(a1 + i * d)
