@@ -25,7 +25,8 @@
 # data.writelines(colors) # разделителей не будет
 # data.close()
 
-# with open('file.txt', 'w') as data:
+# контекстный менеджер
+# with open('file.txt', 'w') as data: 
 #     data.write('line 1\n')
 #     data.write('line 2\n')
 
